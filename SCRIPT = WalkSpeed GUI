@@ -13,13 +13,13 @@ getgenv().Theme = "BloodTheme"
 local Window = Library.CreateLib("WalkSpeed GUI【V1.5】", getgenv().Theme)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
-Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 250 (MaxValue) | 16 (MinValue)
+Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 Section:NewTextBox("WalkSpeed", "Type In A Number To Make The Speed U Want", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
-Section:NewSlider("JumpPower", "bruh", 20, 50, function(s) -- 250 (MaxValue) | 50 (MinValue)
+Section:NewSlider("JumpPower", "bruh", 250, 50, function(s) -- 250 (MaxValue) | 50 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 Section:NewTextBox("JumpPower", "bruh", function(txt)
