@@ -30,7 +30,13 @@ Section:NewSlider("JumpPower", "bruh", 250, 50, function(s) -- 250 (MaxValue) | 
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 Section:NewTextBox("JumpPower", "bruh", function(txt)
-	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+end)
+Section:NewButton("Reset WalkSpeed To 16", "", function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+Section:NewButton("Reset JumpPower To 50", "", function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 end)
 local Section = Tab:NewSection("ToggleUI")
 Section:NewButton("Keyboard", "For Hide UI", function()
@@ -152,6 +158,12 @@ end)
 local Section = Tab:NewSection("【💬】Other")
 Section:NewButton("Fly 【Mobile】", "IDK", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/ySypYydL"))()
+end)
+Section:NewButton("Infinite Jump", "Idk ", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/V3DKCQTT'),true))()
+end)
+Section:NewButton("Fullbright", " :) ", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/06iG6YkU'),true))()
 end)
 Section:NewButton("Infinite Yield", "Idk", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
