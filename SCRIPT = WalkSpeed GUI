@@ -10,15 +10,14 @@ getgenv().Theme = "BloodTheme"
     Sentinel
     Synapse
 ]]
-local Window = Library.CreateLib("WalkSpeed GUI【V1.8】", getgenv().Theme)
-local starterGui - game:GetService("StarterGui")
+local starterGui = game:GetService("StarterGui")
 
 wait(2)
 starterGui:SetCore("SendNotification",{
-Title = "Note!",
-Text = "Please Join Flee the facility first."
+Title = "Message From GamerAbhiyan",
+Text = "Thanks You For Executing My Script"
 })
-end
+local Window = Library.CreateLib("WalkSpeed GUI【V1.8】", getgenv().Theme)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
