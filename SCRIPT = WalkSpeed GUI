@@ -16,7 +16,6 @@ starterGui:SetCore("SendNotification",{
 Title = "Message From GamerAbhiyan",
 Text = "Thank You For Executing My Script"
 })
-end
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
