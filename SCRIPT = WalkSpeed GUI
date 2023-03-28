@@ -14,7 +14,7 @@ local starterGui = game:GetService("StarterGui")
 
 wait(0)
 starterGui:SetCore("SendNotification",{
-Title = "Message From GamerAbhiyan",
+Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
 local Window = Library.CreateLib("WalkSpeed GUI【V1.8】", getgenv().Theme)
