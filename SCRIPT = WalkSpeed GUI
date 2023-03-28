@@ -11,6 +11,14 @@ getgenv().Theme = "BloodTheme"
     Synapse
 ]]
 local Window = Library.CreateLib("WalkSpeed GUI【V1.8】", getgenv().Theme)
+local starterGui - game:GetService("StarterGui")
+
+wait(2)
+starterGui:SetCore("SendNotification",{
+Title = "Note!",
+Text = "Please Join Flee the facility first."
+})
+end
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
@@ -66,7 +74,10 @@ Section:NewButton("MeepCity", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/synolope/mpcity/main/mainscript.lua",true))()
 end)
 Section:NewButton("Rainbow Friends", " ", function()
-	loadstring(game:HttpGet(("https://cdn.discordapp.com/attachments/948140763429085204/1003597010533883994/out.lua.txt"),true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+end)
+Section:NewButton("Rainbow Friends | BorkWare", "IDK WHAT SCRIPT ", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
 end)
 Section:NewButton("Evade", " ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
@@ -123,9 +134,6 @@ Section:NewButton("Adopt Me", "If you see options, choose ADOPT ME", function()
 end)
 Section:NewButton("BedWars", "IDK WHAT SCRIPT", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP", true))()
-end)
-Section:NewButton("Rainbow Friends | BorkWare", "IDK WHAT SCRIPT ", function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
 end)
 Section:NewButton("Clone Tycoon 2", "IDK WHAT SCRIPT", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf",true))()
