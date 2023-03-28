@@ -26,12 +26,14 @@ end)
 Section:NewTextBox("WalkSpeed", "Type In A Number To Make The Speed U Want", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
+local Section = Tab:NewSection("Jump")
 Section:NewSlider("JumpPower", "bruh", 250, 50, function(s) -- 250 (MaxValue) | 50 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 Section:NewTextBox("JumpPower", "bruh", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
 end)
+local Section = Tab:NewSection("Reset | Reset In Game Not In Script Slider")
 Section:NewButton("Reset WalkSpeed To 16", "", function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
