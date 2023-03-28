@@ -26,12 +26,18 @@ end)
 Section:NewTextBox("WalkSpeed", "Type In A Number To Make The Speed U Want", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
+Section:NewButton("WalkSpeed Auto 50 Speed", "Key = ", function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
 local Section = Tab:NewSection("Jump")
 Section:NewSlider("JumpPower", "bruh", 250, 50, function(s) -- 250 (MaxValue) | 50 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 Section:NewTextBox("JumpPower", "bruh", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+end)
+Section:NewButton("JumpPower Auto 100 Jump", "=]", function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
 end)
 local Section = Tab:NewSection("Reset | Reset In Game Not In Script Slider")
 Section:NewButton("Reset WalkSpeed To 16", "", function()
@@ -160,6 +166,9 @@ end)
 local Section = Tab:NewSection("【💬】Other")
 Section:NewButton("Fly 【Mobile】", "IDK", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/ySypYydL"))()
+end)
+Section:NewButton("Fly Mobile 【Fly HD ADMIN V1】", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Ignore-00000/main/Ignore"))()
 end)
 Section:NewButton("Infinite Jump", "Idk ", function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/V3DKCQTT'),true))()
