@@ -10,7 +10,7 @@ getgenv().Theme = "BloodTheme"
     Sentinel
     Synapse
 ]]
-local Window = Library.CreateLib("WalkSpeed GUI【V1.5】", getgenv().Theme)
+local Window = Library.CreateLib("WalkSpeed GUI【V1.8】", getgenv().Theme)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
@@ -153,7 +153,7 @@ Section:NewButton("Esp Player 【Name】", "Idk", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zachisfunny/ROBLOX-ESP/main/Script'),true))()
 end)
 Section:NewButton("Esp Player 【Cham】", "IDK WKWKWK ", function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/csDqazVh"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-ESP-CHAM/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%E3%80%91"))()
 end)
 Section:NewButton("Keyboard", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
