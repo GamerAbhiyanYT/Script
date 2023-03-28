@@ -12,10 +12,11 @@ getgenv().Theme = "BloodTheme"
 ]]
 local starterGui = game:GetService("StarterGui")
 
-wait(0)
+wait(2)
 starterGui:SetCore("SendNotification",{
-Title = "Message GamerAbhiyan",
-Text = "Thanks You For Executing My Script"
+Title = "Message From GamerAbhiyan",
+Text = "Thanks You For Executing My Script",
+Duration = 15"
 })
 local Window = Library.CreateLib("WalkSpeed GUI【V1.8】", getgenv().Theme)
 local Tab = Window:NewTab("Home")
