@@ -12,7 +12,6 @@ getgenv().Theme = "BloodTheme"
 ]]
 local Window = Library.CreateLib("WalkSpeed GUI【V1.8】", getgenv().Theme)
 local starterGui - game:GetService("StarterGui")
-
 wait(2)
 starterGui:SetCore("SendNotification",{
 Title = "Message From GamerAbhiyan",
