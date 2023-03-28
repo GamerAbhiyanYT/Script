@@ -12,7 +12,7 @@ getgenv().Theme = "BloodTheme"
 ]]
 local starterGui = game:GetService("StarterGui")
 
-wait(1)
+wait(2)
 starterGui:SetCore("SendNotification",{
 Title = "Message From GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
