@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 getgenv().Theme = "BloodTheme"
 --[[
     LightTheme
@@ -17,7 +17,7 @@ starterGui:SetCore("SendNotification",{
 Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
-local Window = Library.CreateLib("WalkSpeed GUI | Universal Waljum HUB | 【V2.0】", getgenv().Theme)
+local Window = Library.CreateLib("WalkSpeed GUI | Universal Waljum HUB | 【V2.5】", getgenv().Theme)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
@@ -28,12 +28,24 @@ Section:NewTextBox("WalkSpeed", "Type In A Number To Make The Speed U Want", fun
 end)
 Section:NewButton("WalkSpeed Auto 50 Speed", "Key = ", function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewToggle("WalkSpeed Auto 50", ":)", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+        starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "WalkSpeed On"
+})
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "WalkSpeed Off"
+})
     end
 end)
 local Section = Tab:NewSection("Jump")
@@ -45,24 +57,48 @@ Section:NewTextBox("JumpPower", "bruh", function(txt)
 end)
 Section:NewButton("JumpPower Auto 100 Jump", "=]", function()
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewToggle("JumpPower Auto 100", ":)", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "JumpPower On"
+})
     else
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "JumpPower Off"
+})
     end
 end)
 local Section = Tab:NewSection("Reset | Reset In Game Not In Script Slider")
 Section:NewButton("Reset WalkSpeed To 16", "", function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Reset JumpPower To 50", "", function()
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 local Section = Tab:NewSection("ToggleUI")
 Section:NewButton("Keyboard", "For Hide UI", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewKeybind("Toggle ui", "makes the gui invisible, press again to make it visible", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI()
@@ -71,43 +107,95 @@ local Tab = Window:NewTab("More")
 local Section = Tab:NewSection("【🎮】All Games 1 Script")
 Section:NewButton("Games Hub V6", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Games-Hub-Script/main/Games%20Hub%20(Always%20updated)"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Games Hub V5 [Fixed]", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Games-Hub-V5-Selector-Fixed/main/Games"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("B Genesis V1.2", " ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Sxrge Hub", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/sxrge3k/sxrge_ssh_hub/main/sxrge_script_hub"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 local Section = Tab:NewSection("【🎮】Games")
 Section:NewButton("Survive The Killer", " ", function()
 	loadstring(game:HttpGet("https://scriptblox.com/raw/Survive-the-Killer!-iluv-stk-script-8913", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Doors | PoopDoors Edited", " ", function()
-	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Doors | PoopDoors", " ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Natural Disaster Survival | GreenBallon", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8" , true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Natural Disaster Survival | My Script", " ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/FktJaRpR"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("MeepCity", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/synolope/mpcity/main/mainscript.lua",true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Rainbow Friends", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Rainbow Friends | BorkWare", "IDK WHAT SCRIPT ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Evade", " ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Blox Hunt", "Key = RoxHub_KeyLERDGDRIFMDS", function()
 	pcall(function()
@@ -115,9 +203,17 @@ Rox_Hub = true
 loadstring(game:HttpGet("https://gist.githubusercontent.com/HaxxV1/d7cfdb5090e819a84a8db22fb113f39d/raw"))()
 end)
 setclipboard("RoxHub_KeyLERDGDRIFMDS")
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Tower Of Hell", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Flee The Facility", " ", function()
 	if game.PlaceId == 893973440 or game.PlaceId == 1738581510 then
@@ -128,92 +224,205 @@ Title = "Note!",
 Text = "Please Join Flee the facility first."
 })
 end
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Cart Ride Around Nothing", "Key = cart1ride2around3nothing12345..!!990", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ride-cart/main/Cart11"))()
+setclipboard("cart1ride2around3nothing12345..!!990")
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Break In V1", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/RubyBoo4life/break-in-v1/main/.gitignore"))();
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("My Restaurant | Auto Farm", " ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/kV7cu04b"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Build A Boat For Treasure", " ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("SteepSteps", " ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Cutsences/SteepSteps/main/SteepSteps.lua'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Plss Donate", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Pet Simulator X", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Blox Fruit", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/bf1", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Get To The Top", " ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/FbHPCWdK"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Adopt Me", "If you see options, choose ADOPT ME", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("BedWars", "IDK WHAT SCRIPT", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Clone Tycoon 2", "IDK WHAT SCRIPT", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf",true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Millionaire Empire Tycoon | Infinite Cash", "Cash = 1000000000", function()
 	while true do
 	game:GetService("ReplicatedStorage").RespawnService:FireServer(1000000000)
 	task.wait()
 end
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Brookhaven", "This is BrookHaven", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Epic Minigames", " And I Know What Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Murder Mystery 2", "", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 local Section = Tab:NewSection("【💬】Other")
 Section:NewToggle("FullBright", ":)", function(state)
     if state then
         loadstring(game:HttpGet(('https://pastebin.com/raw/06iG6YkU'),true))()
+        starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Fullbright On"
+})
     else
         loadstring(game:HttpGet(('https://pastebin.com/raw/06iG6YkU'),true))()
+        starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Fullbright Off"
+})
     end
 end)
 Section:NewButton("Fly 【Mobile】", "IDK", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/ySypYydL"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Fly Mobile 【Fly HD ADMIN V1】", "Made By Take Modzz Or DXP Team", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Ignore-00000/main/Ignore"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Noclip", "OP", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-Op/main/SCRIPT%20Noclip"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Infinite Jump", "Idk ", function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/V3DKCQTT'),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Infinite Yield", "Idk", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Esp Player 【Name】", "Idk", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zachisfunny/ROBLOX-ESP/main/Script'),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Esp Player 【Cham】", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-credit/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%202%E3%80%91"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Keyboard", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Teleport Tools", "=]", function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/iMKYkmcu'),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 local Section = Tab:NewSection("【🔲】GUI / HUB")
 Section:NewButton("Give me another GUI / HUB script", "This it Not Button", function()
@@ -222,12 +431,24 @@ end)
 local Section = Tab:NewSection("GUI")
 Section:NewButton("Yeet Gui", " ", function()
 	loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Yeet-GUI-9620"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("RTX Gui", "The Best RTX Gui", function()
 	loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Admin Gui", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 local Section = Tab:NewSection("HUB")
 Section:NewButton("No Hub Found, Sorry", " ", function()
@@ -254,32 +475,61 @@ Section:NewButton("Copy To ClipBoard", "Work Or Not Work?", function()
 	setclipboard("lagu_introbeacon")
 end)
 local Section = Tab:NewSection("= - Update - =")
-local Section = Tab:NewSection("Version Now Is 2.0")
+local Section = Tab:NewSection("Version Now Is 2.5")
 local Section = Tab:NewSection("Added New SCRIPT")
 local Section = Tab:NewSection("Added JumpPower")
 local Section = Tab:NewSection("Added Update")
 local Section = Tab:NewSection("Added My Script")
+local Section = Tab:NewSection("Every Time You Press There Will Be An Execute Notification")
+local Section = Tab:NewSection("Now Scripts Can Move Use Hand")
 local Tab = Window:NewTab("My Script")
 local Section = Tab:NewSection("= My Script =")
 Section:NewButton("Natural Disaster Survival", " ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/FktJaRpR"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Fly 【Mobile】", "IDK", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ySypYydL"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Noclip", "OP", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-Op/main/SCRIPT%20Noclip"))()
 starterGui:SetCore("SendNotification",{
-Title = "Message GamerAbhiyan",
-Text = "Thanks You For Executing My Script"
+Title = "Message",
+Text = "Successfully Executed"
 })
 end)
 Section:NewButton("Esp Player 【Name】", "Idk", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zachisfunny/ROBLOX-ESP/main/Script'),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Esp Player 【Cham】", "?", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-ESP-CHAM/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%E3%80%91"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Esp Player 【Cham 2】", "Ke 2 ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-credit/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%202%E3%80%91"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("Credit", "What?, Wanna A Key?", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-The-Real-CREDIT/main/SCRIPT%20%3D%20Credit"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
