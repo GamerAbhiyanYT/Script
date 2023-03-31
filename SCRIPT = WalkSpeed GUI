@@ -10,13 +10,6 @@ getgenv().Theme = "BloodTheme"
     Sentinel
     Synapse
 ]]
-Section:NewToggle("Waljum Hub", "ToggleInfo", function(state)
-    if state then
-        print("Toggle On")
-    else
-        print("Toggle Off")
-    end
-end)
 local starterGui = game:GetService("StarterGui")
 
 wait(2)
@@ -59,6 +52,13 @@ Section:NewButton("Keyboard", "For Hide UI", function()
 end)
 Section:NewKeybind("Toggle ui", "makes the gui invisible, press again to make it visible", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI()
+end)
+Section:NewToggle("Waljum Hub", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
 end)
 local Tab = Window:NewTab("More")
 local Section = Tab:NewSection("【🎮】All Games 1 Script")
