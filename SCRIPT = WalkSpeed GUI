@@ -10,6 +10,13 @@ getgenv().Theme = "BloodTheme"
     Sentinel
     Synapse
 ]]
+Section:NewToggle("Waljum Hub", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
 local starterGui = game:GetService("StarterGui")
 
 wait(2)
@@ -172,10 +179,6 @@ Section:NewButton("Fly Mobile 【Fly HD ADMIN V1】", "Made By Take Modzz Or DXP
 end)
 Section:NewButton("Noclip", "OP", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-Op/main/SCRIPT%20Noclip"))()
-starterGui:SetCore("SendNotification",{
-Title = "WalJum HUB",
-Text = "Success To Executed"
-})
 end)
 Section:NewButton("Infinite Jump", "Idk ", function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/V3DKCQTT'),true))()
@@ -246,6 +249,10 @@ Section:NewButton("Natural Disaster Survival", " ", function()
 end)
 Section:NewButton("Noclip", "OP", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-Op/main/SCRIPT%20Noclip"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message GamerAbhiyan",
+Text = "Thanks You For Executing My Script"
+})
 end)
 Section:NewButton("Esp Player 【Name】", "Idk", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zachisfunny/ROBLOX-ESP/main/Script'),true))()
