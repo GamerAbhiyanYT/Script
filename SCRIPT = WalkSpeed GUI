@@ -29,6 +29,13 @@ end)
 Section:NewButton("WalkSpeed Auto 50 Speed", "Key = ", function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 end)
+Section:NewToggle("WalkSpeed Auto 50", ":)", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
 local Section = Tab:NewSection("Jump")
 Section:NewSlider("JumpPower", "bruh", 250, 50, function(s) -- 250 (MaxValue) | 50 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
@@ -38,6 +45,13 @@ Section:NewTextBox("JumpPower", "bruh", function(txt)
 end)
 Section:NewButton("JumpPower Auto 100 Jump", "=]", function()
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+Section:NewToggle("JumpPower Auto 100", ":)", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
 end)
 local Section = Tab:NewSection("Reset | Reset In Game Not In Script Slider")
 Section:NewButton("Reset WalkSpeed To 16", "", function()
@@ -52,13 +66,6 @@ Section:NewButton("Keyboard", "For Hide UI", function()
 end)
 Section:NewKeybind("Toggle ui", "makes the gui invisible, press again to make it visible", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI()
-end)
-Section:NewToggle("Waljum Hub", "ToggleInfo", function(state)
-    if state then
-        print("Toggle On")
-    else
-        print("Toggle Off")
-    end
 end)
 local Tab = Window:NewTab("More")
 local Section = Tab:NewSection("【🎮】All Games 1 Script")
