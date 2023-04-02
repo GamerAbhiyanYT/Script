@@ -141,7 +141,7 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
-Section:NewButton("Doors | PoopDoors Edited", " ", function()
+Section:NewButton("Doors | MSDOORS", " ", function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
