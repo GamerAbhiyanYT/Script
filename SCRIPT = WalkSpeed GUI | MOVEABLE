@@ -424,11 +424,15 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
-Section:NewButton("FE Invisible", "Key = ", function()
+Section:NewButton("FE Invisible", " =\? ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/2ucYrZ9H"))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
 Text = "Successfully Executed"
+})
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Noclip Will Not Work If You Use Them Together"
 })
 end)
 local Section = Tab:NewSection("【🔲】GUI / HUB")
