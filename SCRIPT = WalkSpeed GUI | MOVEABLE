@@ -24,7 +24,7 @@ TextButton.BackgroundColor3 = Color3.new(68, 68, 68)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(1, 0, 1, 0)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "ToggleUI"
+TextButton.Text = "Toggle"
 TextButton.TextColor3 = Color3.new(1, 1, 1)
 TextButton.TextScaled = true
 TextButton.TextSize = 50.000
@@ -52,7 +52,7 @@ getgenv().Theme = "BloodTheme"
 ]]
 local starterGui = game:GetService("StarterGui")
 
-wait(1)
+wait(2)
 starterGui:SetCore("SendNotification",{
 Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
@@ -464,6 +464,13 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
+Section:NewButton("auto piano", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Misc Scripts/PianoAutoplayer.lua",true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
 local Section = Tab:NewSection("【👀】Script FE")
 Section:NewButton("FE Invisible", " =\? ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/2ucYrZ9H"))()
@@ -490,7 +497,7 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
-Section:NewButton("FE TP To Player", "Key = ", function()
+Section:NewButton("FE TP To Player", " ", function()
 	loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
