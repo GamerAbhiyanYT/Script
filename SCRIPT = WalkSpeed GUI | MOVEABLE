@@ -464,6 +464,7 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
+local Section = Tab:NewSection("【👀】Script FE")
 Section:NewButton("FE Invisible", " =\? ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/2ucYrZ9H"))()
 starterGui:SetCore("SendNotification",{
@@ -473,6 +474,27 @@ Text = "Successfully Executed"
 starterGui:SetCore("SendNotification",{
 Title = "Message",
 Text = "Noclip Will Not Work If You Use Them Together"
+})
+end)
+Section:NewButton("FE Animation R15", "No Deskripsion", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("FE Rewind", "No Yt", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("FE Kill", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Scrim/main/Kill"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
 })
 end)
 local Section = Tab:NewSection("【🔲】GUI / HUB")
