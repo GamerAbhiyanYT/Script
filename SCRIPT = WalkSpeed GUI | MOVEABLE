@@ -490,6 +490,13 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
+Section:NewButton("FE TP To Player", "Key = ", function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
 Section:NewButton("FE Kill", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Scrim/main/Kill"))()
 starterGui:SetCore("SendNotification",{
