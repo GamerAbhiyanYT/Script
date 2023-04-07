@@ -607,6 +607,10 @@ Text = "Successfully Executed"
 end)
 Section:NewButton("WalkSpeed GUI | MOVEABLE| AUTO UPDTAE", "", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script/main/SCRIPT%20%3D%20WalkSpeed%20GUI%20%7C%20MOVEABLE"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 Section:NewButton("WalkSpeed GUI TEST | MOVEABLE", "", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-test/main/SCRIPT%20%3D%20WalkSpeed%20TEST"))()
