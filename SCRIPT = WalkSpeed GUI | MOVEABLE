@@ -57,7 +57,7 @@ starterGui:SetCore("SendNotification",{
 Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
-local Window = Library.CreateLib("WalkSpeed GUI | Universal Waljum HUB | 【V2.9】", getgenv().Theme)
+local Window = Library.CreateLib("WalkSpeed GUI AutoUpdate | Universal Waljum HUB | 【V3.0】 | By GamerAbhiyan", getgenv().Theme)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
