@@ -266,6 +266,9 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
+Section:NewButton("Auto Click", " BALLER ", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/e1FMf0R2"))()
+end)
 local Section = Tab:NewSection("【👀】Script FE")
 Section:NewButton("FE Invisible", " =\? ", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/2ucYrZ9H"))()
