@@ -20,7 +20,7 @@ Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
 Frame.Size = UDim2.new(0.129513338, 0, 0.227972031, 0)
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(68, 68, 68)
+TextButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(1, 0, 1, 0)
 TextButton.Font = Enum.Font.SourceSans
@@ -28,7 +28,7 @@ TextButton.Text = "ToggleUI"
 TextButton.TextColor3 = Color3.new(1, 1, 1)
 TextButton.TextScaled = true
 TextButton.TextSize = 50.000
-TextButton.TextStrokeColor3 = Color3.new(68, 68, 68)
+TextButton.TextStrokeColor3 = Color3.fromRGB(68, 68, 68)
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:Connect(function()
@@ -326,6 +326,20 @@ Text = "Successfully Executed"
 end)
 Section:NewButton("Doors | PoopDoors", " ", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Doors | Vynixus", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Doors | Darkrai X", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
 Text = "Successfully Executed"
