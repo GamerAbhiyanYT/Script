@@ -31,7 +31,6 @@ TextButton.TextSize = 50.000
 TextButton.TextStrokeColor3 = Color3.new(k/255,0/255,0/255)
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
-
 TextButton.MouseButton1Down:Connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true, "Q" , false , game)
 end)
