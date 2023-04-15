@@ -24,7 +24,7 @@ TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(1, 0, 1, 0)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Toggle WalJum"
+TextButton.Text = "Toggle "
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 50.000
@@ -36,7 +36,7 @@ TextButton.MouseButton1Down:Connect(function()
 end)
 
 UITextSizeConstraint.Parent = TextButton
-UITextSizeConstraint.MaxTextSize = 45
+UITextSizeConstraint.MaxTextSize = 50
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 getgenv().Theme = "BloodTheme"
@@ -57,7 +57,7 @@ starterGui:SetCore("SendNotification",{
 Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
-local Window = Library.CreateLib("WalkSpeed GUI | Universal Waljum HUB | 【V2.9】", getgenv().Theme)
+local Window = Library.CreateLib("Universal Waljum HUB | 【V3.1】", getgenv().Theme)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
@@ -579,11 +579,7 @@ Section:NewButton("Copy To ClipBoard", "Work Or Not Work?", function()
 end)
 local Section = Tab:NewSection("My Discord")
 Section:NewButton("Copy To ClipBoard", "Work Or Not Work?", function()
-	setclipboard("https://discord.gg/FZPnkuGR")
-end)
-local Section = Tab:NewSection("My Name Roblox")
-Section:NewButton("Copy To ClipBoard", "Work Or Not Work?", function()
-	setclipboard("lagu_introbeacon")
+	setclipboard("https://discord.gg/G3K4d8Eu")
 end)
 local Tab = Window:NewTab("My Script")
 local Section = Tab:NewSection("= My Script =")
@@ -629,7 +625,7 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
-Section:NewButton("WalkSpeed GUI | MOVEABLE| AUTO UPDATE", "", function()
+Section:NewButton("WalkSpeed GUI | MOVEABLE | AUTO UPDATE", "", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script/main/SCRIPT%20%3D%20WalkSpeed%20GUI%20%7C%20MOVEABLE"))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
