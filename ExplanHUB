@@ -288,7 +288,21 @@ Text = "Successfully Executed"
 })
 end)
 Section:NewButton("Rejoin Button On Disconnected", "Recommended Auto Executed", function()
-	https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Dont Click Plss", "PLSS DONT CLICK", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Rejoin", "Bug Camera?, Here's the Way", function()
+	game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 starterGui:SetCore("SendNotification",{
 Title = "Message",
 Text = "Successfully Executed"
