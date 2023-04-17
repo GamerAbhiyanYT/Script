@@ -16,7 +16,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Frame.BackgroundTransparency = 0.500
-Frame.Position = UDim2.new(0.006, 0,0.400, 0)
+Frame.Position = UDim2.new(0.006, 0,0.900, 0)
 Frame.Size = UDim2.new(0, 100,0, 30)
 
 TextButton.Parent = Frame
@@ -57,11 +57,21 @@ starterGui:SetCore("SendNotification",{
 Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
-local Window = Library.CreateLib("Universal Explan HUB | 【V3.1】", getgenv().Theme)
+local Window = Library.CreateLib("Universal Explan HUB | 【V3.2】", getgenv().Theme)
 local Tab = Window:NewTab("Recommended")
 local Section = Tab:NewSection("If You Die You Will Lose The Toggle")
 local Section = Tab:NewSection("And You Executed Again And Too")
 local Section = Tab:NewSection("This Script Was Previously Closed First Yaa")
+Section:NewLabel("Or")
+local Section = Tab:NewSection("If You Die And Lose Toggle")
+local Section = Tab:NewSection("Press This Button To Bring Up Toggle Back")
+Section:NewButton("Bring up the Toggles", "Use This If You Lose The Toggle", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Explan/main/Toggle"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Succeed To Bring Up Toggle"
+})
+end)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
@@ -534,6 +544,20 @@ Text = "Successfully Executed"
 end)
 Section:NewButton("Murder Mystery 2", "", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Can't Say Word", "Bypass To Chat Can't You Say", function()
+	loadstring(game:HttpGet("https://scriptblox.com/raw/Cant-Say-the-Word-Lets-you-say-your-word-UNPATCHABLE-4679"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Don't Press If You Want Your Account to Be Safe 💀", "", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
 Text = "Successfully Executed"
