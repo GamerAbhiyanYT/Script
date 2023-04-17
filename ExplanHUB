@@ -331,6 +331,13 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
+Section:NewButton("Survive The Killer | ChairWare", "To Op", function()
+	loadstring(game:HttpGet("https://scriptblox.com/raw/Survive-the-Killer!-ChairWare-Hub-9854"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
 Section:NewButton("Doors | MSDOORS", " ", function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
 starterGui:SetCore("SendNotification",{
