@@ -281,7 +281,18 @@ Text = "Successfully Executed"
 })
 end)
 Section:NewButton("Auto Click", " BALLER ", function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/e1FMf0R2"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/CmVvdeuc"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Rejoin Button On Disconnected", "Recommended Auto Executed", function()
+	https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
 end)
 local Section = Tab:NewSection("【👀】Script FE")
 Section:NewButton("FE Invisible", " =\? ", function()
