@@ -16,8 +16,8 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Frame.BackgroundTransparency = 0.500
-Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
-Frame.Size = UDim2.new(0.129513338, 0, 0.227972031, 0)
+Frame.Position = UDim2.new(0.006, 0,0.400, 0)
+Frame.Size = UDim2.new(0, 100,0, 30)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -36,7 +36,7 @@ TextButton.MouseButton1Down:Connect(function()
 end)
 
 UITextSizeConstraint.Parent = TextButton
-UITextSizeConstraint.MaxTextSize = 45
+UITextSizeConstraint.MaxTextSize = 40
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 getgenv().Theme = "BloodTheme"
@@ -58,6 +58,10 @@ Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
 local Window = Library.CreateLib("Universal Explan HUB | 【V3.1】", getgenv().Theme)
+local Tab = Window:NewTab("Recommended")
+local Section = Tab:NewSection("If You Die You Will Lose The Toggle")
+local Section = Tab:NewSection("And You Executed Again And Too")
+local Section = Tab:NewSection("This Script Was Previously Closed First Yaa")
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
