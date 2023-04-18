@@ -72,6 +72,15 @@ Title = "Message",
 Text = "Succeed To Bring Up Toggle"
 })
 end)
+local Section = Tab:NewSection("I Still Recommend To Always Press This After Executing This Script")
+local Section = Tab:NewSection("Press This Button To Bring Up Toggle Back")
+Section:NewButton("Rejoin Button On Disconnected", "Recommended Auto Executed", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
@@ -306,6 +315,10 @@ Section:NewButton("Rejoin", "Bug Camera?, Here's the Way", function()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
 Text = "Successfully Executed"
+})
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "And Wait a Moment"
 })
 end)
 local Section = Tab:NewSection("【👀】Script FE")
