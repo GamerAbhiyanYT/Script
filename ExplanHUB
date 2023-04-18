@@ -361,6 +361,21 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
+
+Section:NewButton("FE Free Emote", " ", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("FE Anti Fling", "Bug Camera?, Here's the Way", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Q0Nh2SYx"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
 local Section = Tab:NewSection("【🎮】Games")
 Section:NewButton("Survive The Killer", " ", function()
 	loadstring(game:HttpGet("https://scriptblox.com/raw/Survive-the-Killer!-iluv-stk-script-8913", true))()
