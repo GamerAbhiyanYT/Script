@@ -75,11 +75,11 @@ end)
 local Section = Tab:NewSection("I Still Recommend To Always Press This After Executing This Script")
 local Section = Tab:NewSection("Press This Button To Bring Up Toggle Back")
 Section:NewButton("Rejoin Button On Disconnected", "Recommended Auto Executed", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua"))()
-starterGui:SetCore("SendNotification",{
+	starterGui:SetCore("SendNotification",{
 Title = "Message",
-Text = "Successfully Executed"
+Text = "Successfully Executed And Just Press Once"
 })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua"))()
 end)
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
@@ -414,6 +414,14 @@ Text = "Successfully Executed"
 end)
 Section:NewButton("Doors | Darkrai X", " ", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+
+Section:NewButton("Doors | Nerd V4", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/doorsnerdv4.lua"))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
 Text = "Successfully Executed"
